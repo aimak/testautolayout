@@ -40,6 +40,21 @@
 	[dialogViewController didMoveToParentViewController:fullScreenViewController];
 	
 	fullScreenViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
+	[fullScreenViewController.view addConstraints: [dialogViewController.view autoCenterInSuperview]];
+	NSLayoutConstraint *constraint = [dialogViewController.view autoPinEdge:ALEdgeBottom
+																	 toEdge:ALEdgeBottom
+																	 ofView:fullScreenViewController.view
+																 withOffset:30
+																   relation:NSLayoutRelationGreaterThanOrEqual];
+//	constraint.priority = UILayoutPriorityRequired;
+	[fullScreenViewController.view addConstraint: constraint];
+	constraint = [dialogViewController.view autoPinEdge:ALEdgeLeft
+												 toEdge:ALEdgeLeft
+												 ofView:fullScreenViewController.view
+											 withOffset:300
+											   relation:NSLayoutRelationGreaterThanOrEqual];
+//	constraint.priority = UILayoutPriorityRequired;
+	[fullScreenViewController.view addConstraint: constraint];
 }
 
 - (void)didReceiveMemoryWarning
