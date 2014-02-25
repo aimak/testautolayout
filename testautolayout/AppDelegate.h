@@ -1,0 +1,15 @@
+//
+//  AppDelegate.h
+//  testautolayout
+//
+//  Created by Kristof Van Landschoot on 24/02/14.
+//  Copyright (c) 2014 Belgacom. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end
