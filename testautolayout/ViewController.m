@@ -39,7 +39,7 @@
 	[fullScreenViewController addChildViewController: dialogViewController];
 	[dialogViewController didMoveToParentViewController:fullScreenViewController];
 	
-	fullScreenViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
+	fullScreenViewController.view.translatesAutoresizingMaskIntoConstraints = YES;
 	[fullScreenViewController.view addConstraints: [dialogViewController.view autoCenterInSuperview]];
 	[fullScreenViewController.view addConstraint: [dialogViewController.view autoPinEdgeToSuperviewEdge:ALEdgeTop
 																							  withInset:10
