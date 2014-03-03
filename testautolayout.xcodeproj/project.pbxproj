@@ -22,6 +22,8 @@
 		6DB9948B18BBA601006ECE67 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB9948A18BBA601006ECE67 /* XCTest.framework */; };
 		6DB9948C18BBA601006ECE67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB9946818BBA600006ECE67 /* Foundation.framework */; };
 		6DB9948D18BBA601006ECE67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB9946C18BBA600006ECE67 /* UIKit.framework */; };
+		DAB5C85D18C4BBA600C94CB0 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB5C85C18C4BBA600C94CB0 /* AlertView.m */; };
+		DAB5C85F18C4BC8800C94CB0 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB5C85E18C4BC8800C94CB0 /* AlertView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		6DB9948318BBA600006ECE67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DB9948918BBA601006ECE67 /* testautolayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testautolayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB9948A18BBA601006ECE67 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DAB5C85B18C4BBA600C94CB0 /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		DAB5C85C18C4BBA600C94CB0 /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		DAB5C85E18C4BC8800C94CB0 /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,7 @@
 		6DB9946E18BBA600006ECE67 /* testautolayout */ = {
 			isa = PBXGroup;
 			children = (
+				DAB5C85918C4BB8200C94CB0 /* Views */,
 				6D84FEBB18BC983900BBBAD1 /* UIView+AutoLayout.h */,
 				6D84FEBC18BC983900BBBAD1 /* UIView+AutoLayout.m */,
 				6DB9947718BBA600006ECE67 /* AppDelegate.h */,
@@ -139,6 +145,24 @@
 				6DB9947618BBA600006ECE67 /* testautolayout-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAB5C85918C4BB8200C94CB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAB5C85A18C4BB8B00C94CB0 /* Alert */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DAB5C85A18C4BB8B00C94CB0 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				DAB5C85B18C4BBA600C94CB0 /* AlertView.h */,
+				DAB5C85C18C4BBA600C94CB0 /* AlertView.m */,
+				DAB5C85E18C4BC8800C94CB0 /* AlertView.xib */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +243,7 @@
 			files = (
 				6DB9948418BBA600006ECE67 /* Images.xcassets in Resources */,
 				6D84FEBA18BC951700BBBAD1 /* DialogViewController.xib in Resources */,
+				DAB5C85F18C4BC8800C94CB0 /* AlertView.xib in Resources */,
 				6DB9947C18BBA600006ECE67 /* Main_iPhone.storyboard in Resources */,
 				6DB9947318BBA600006ECE67 /* InfoPlist.strings in Resources */,
 			);
@@ -241,6 +266,7 @@
 				6D84FEBD18BC983900BBBAD1 /* UIView+AutoLayout.m in Sources */,
 				6DB9948218BBA600006ECE67 /* ViewController.m in Sources */,
 				6DB9947918BBA600006ECE67 /* AppDelegate.m in Sources */,
+				DAB5C85D18C4BBA600C94CB0 /* AlertView.m in Sources */,
 				6DB9947518BBA600006ECE67 /* main.m in Sources */,
 				6D84FEB918BC951700BBBAD1 /* DialogViewController.m in Sources */,
 			);

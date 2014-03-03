@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DialogViewController.h"
 #import "UIView+AutoLayout.h"
+#import "AlertView.h"
 
 @interface ViewController ()
 @property (nonatomic,strong) UIWindow *overlayWindow;
@@ -47,6 +48,11 @@
 	[fullScreenViewController.view addConstraint: [dialogViewController.view autoPinEdgeToSuperviewEdge:ALEdgeLeft
 																							  withInset:10
 																							   relation:NSLayoutRelationGreaterThanOrEqual]];
+}
+
+- (IBAction)showAlert:(id)sender {
+    [AlertView showInView:self.view.superview];
+    
 }
 
 - (void)didReceiveMemoryWarning

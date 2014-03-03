@@ -31,11 +31,12 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
 	self.label.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget turpis turpis, vitae varius elit. Suspendisse potenti. Maecenas auctor venenatis odio quis ullamcorper. Aliquam erat volutpat. Praesent nulla ipsum, tempor eu tempus vitae, lobortis consectetur mi. Lorem ipsum dolor sit amet.";
 	self.view.backgroundColor = [UIColor redColor];
 	self.view.translatesAutoresizingMaskIntoConstraints = NO;
 //	[self.view addConstraint: [self.view autoSetDimension:ALDimensionWidth toSize:150]];
-    [super viewDidLoad];
+
     // Do any additional setup after loading the view from its nib.
 }
 
