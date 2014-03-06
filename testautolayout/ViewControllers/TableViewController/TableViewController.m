@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UIView *tableHeaderWrapperView;
+@property (strong, nonatomic) IBOutlet UILabel *paulLabel;
 
 @end
 
@@ -31,12 +32,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self.descriptionLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
-    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
     self.descriptionLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in posuere felis. Maecenas non varius libero, vel accumsan arcu. Maecenas commodo tempor lacus, a pellentesque lorem accumsan sed. Nunc rutrum et nulla vitae varius. Phasellus ullamcorper felis vel adipiscing lacinia. In nisi sem, porta sed lobortis dapibus, malesuada ut nulla.";
+    
+    self.paulLabel.text = @"I'm Paul and this text should be at least two lines long. That being said, it could be more.";
 }
 
 - (void)didReceiveMemoryWarning
