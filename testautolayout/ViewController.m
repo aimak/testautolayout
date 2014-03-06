@@ -10,6 +10,7 @@
 #import "DialogViewController.h"
 #import "UIView+AutoLayout.h"
 #import "AlertView.h"
+#import "TableViewController.h"
 
 @interface ViewController ()
 @property (nonatomic,strong) UIWindow *overlayWindow;

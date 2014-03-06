@@ -24,6 +24,7 @@
 		6DB9948D18BBA601006ECE67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB9946C18BBA600006ECE67 /* UIKit.framework */; };
 		DAB5C85D18C4BBA600C94CB0 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB5C85C18C4BBA600C94CB0 /* AlertView.m */; };
 		DAB5C85F18C4BC8800C94CB0 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB5C85E18C4BC8800C94CB0 /* AlertView.xib */; };
+		DACE1E2318C89AB0001EB601 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE1E2118C89AB0001EB601 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		DAB5C85B18C4BBA600C94CB0 /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
 		DAB5C85C18C4BBA600C94CB0 /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
 		DAB5C85E18C4BC8800C94CB0 /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		DACE1E2018C89AB0001EB601 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		DACE1E2118C89AB0001EB601 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		6DB9946E18BBA600006ECE67 /* testautolayout */ = {
 			isa = PBXGroup;
 			children = (
+				DACE1E1E18C89A83001EB601 /* ViewControllers */,
 				DAB5C85918C4BB8200C94CB0 /* Views */,
 				6D84FEBB18BC983900BBBAD1 /* UIView+AutoLayout.h */,
 				6D84FEBC18BC983900BBBAD1 /* UIView+AutoLayout.m */,
@@ -163,6 +167,23 @@
 				DAB5C85E18C4BC8800C94CB0 /* AlertView.xib */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		DACE1E1E18C89A83001EB601 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DACE1E1F18C89A91001EB601 /* TableViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DACE1E1F18C89A91001EB601 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DACE1E2018C89AB0001EB601 /* TableViewController.h */,
+				DACE1E2118C89AB0001EB601 /* TableViewController.m */,
+			);
+			path = TableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +289,7 @@
 				6DB9947918BBA600006ECE67 /* AppDelegate.m in Sources */,
 				DAB5C85D18C4BBA600C94CB0 /* AlertView.m in Sources */,
 				6DB9947518BBA600006ECE67 /* main.m in Sources */,
+				DACE1E2318C89AB0001EB601 /* TableViewController.m in Sources */,
 				6D84FEB918BC951700BBBAD1 /* DialogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
